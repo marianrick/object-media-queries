@@ -1,0 +1,29 @@
+body {
+    margin: 10%;
+}
+
+#box {
+    background: green;
+    margin-bottom: 50px;
+}
+
+#box2 {
+    background: red;
+}
+
+#box.size-320 {
+    background: yellow;
+}
+
+#box.size-800 {
+    background: blue;
+}
+
+
+#box.size-500 {
+    background: purple;
+}
+
+#box.size-640-down {
+    text-align: right;
+}
