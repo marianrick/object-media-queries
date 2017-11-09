@@ -5,9 +5,6 @@
 
 // create function to assign object querie classes
 function queryClasses (options = {}) {
-
-    // store windowWidth to be used later 
-    var w = window.innerWidth;        
     
     // set default parameters
     let defaults = {
@@ -33,7 +30,10 @@ function queryClasses (options = {}) {
     }
 
     // create function to assign classes
-    function assignClasses(target, w) {
+    function assignClasses(target) {
+
+        // get current object width
+        var w = target.offsetWidth;
         
         // get all required sizes as array
         const sizesArray = JSON.parse(target.dataset.sizes)
@@ -48,7 +48,7 @@ function queryClasses (options = {}) {
 
     // create an array of all object querie 
     for (var i = 0, len = objects.length; i < len; i++) {
-        assignClasses(objects[i], w);
+        assignClasses(objects[i]);
     }
     
     // log the finished process

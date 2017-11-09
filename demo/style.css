@@ -27,3 +27,9 @@ body {
 #box.size-640-down {
     text-align: right;
 }
+
+.container .fluid {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
